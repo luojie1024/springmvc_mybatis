@@ -1,12 +1,4 @@
-/**   
-* @Title: ItemsServiceIml.java 
-* @Package cn.itcast.ssm.service.iml 
-* @Description: TODO
-* @author Jacky 550997728@qq.com   
-* @date 2017年5月2日 下午7:23:50 
-* @version V1.0   
-*/
-package cn.itcast.ssm.service.iml;
+package cn.itcast.ssm.service.impl;
 
 import java.util.List;
 
@@ -25,8 +17,12 @@ import cn.itcast.ssm.service.ItemsService;
  *  
  */
 public class ItemsServiceImpl implements ItemsService{
+	//注入mapper
+	@Autowired
 	private ItemsMapperCustom itemsMapperCustom;
 	
+	//商品查询列表
+	@Override
 	public List<ItemsCustom> findItemsList(ItemsQueryVo itemsQueryVo) throws Exception{
 		return itemsMapperCustom.findItemsList(itemsQueryVo);
 	}

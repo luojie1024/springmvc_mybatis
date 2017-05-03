@@ -22,5 +22,6 @@ import cn.itcast.ssm.po.ItemsQueryVo;
  *  
  */
 public interface ItemsService{
+	//查询商品信息
 	public List<ItemsCustom> findItemsList(ItemsQueryVo itemsQueryVo) throws Exception;
 }
