@@ -26,4 +26,16 @@ public class ItemsServiceImpl implements ItemsService{
 	public List<ItemsCustom> findItemsList(ItemsQueryVo itemsQueryVo) throws Exception{
 		return itemsMapperCustom.findItemsList(itemsQueryVo);
 	}
+
+//	@Override
+//	public ItemsCustom findItemsById(int id) throws Exception {
+//		
+//		return null;
+//	}
+//
+//	@Override
+//	public void updataItmes(int id, ItemsCustom itemsCustom) throws Exception {
+//		// TODO Auto-generated method stub
+//		
+//	}
 }

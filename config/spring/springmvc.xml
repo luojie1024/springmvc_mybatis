@@ -13,13 +13,11 @@
 		http://www.springframework.org/schema/tx 
 		http://www.springframework.org/schema/tx/spring-tx-3.2.xsd ">
 
-
-
-<!-- 注解驱动 -->
-<mvc:annotation-driven></mvc:annotation-driven>
-
 <!-- !!!组件扫描 controller、service-->
 <context:component-scan base-package="cn.itcast.ssm.controller"></context:component-scan>
+    
+<!-- 注解驱动 -->
+<mvc:annotation-driven></mvc:annotation-driven>
 
 <!--视图解析器 -->
 <bean
@@ -29,5 +27,4 @@
 		<!-- 配置jsp路径的后缀 -->
 		<property name="suffix" value=".jsp"/>
 </bean>
-
 </beans>
